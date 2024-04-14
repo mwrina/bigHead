@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: "Khand";
+    background-color: #000000;
+    color: #FFFFFF;
+    /* TOPO DIREITA BAIXO ESQUERDA */
+    margin: 0px 50px 0px 50px;
+}
+
+/* ================================================================ */
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.retNavbar {
+    background-color: #AC5D00;
+    /* TOPO-ESQ, TOPO-DIR, BAIXO-DIR, BAIXO-ESQ */
+    /* border-radius: 10px 0px 0px 10px; */
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logo {
+    width: 100;
+    height: 100px;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================================================ */
+/* MENU */
+
+.menu {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuEsq {
+    display: border-box;
+    width: 50%;
+}
+
+#sloganLin1 {
+    display: flex;
+    margin-bottom: -40px;
+}
+
+#msloganLin2 {
+    display: flex;
+}
+
+#sloganNormal {
+    padding-left: 5px;
+    font-weight: 400;
+}
+
+#sloganDestacado {
+    padding-left: 5px;
+    font-weight: 700;
+}
+
+#locHor {
+    margin-bottom: 0;
+}
+
+#loc {
+    margin-bottom: -25px;
+}
+
+#locLin {
+    margin-bottom: -15px;
+}
+
+#locHorTit {
+    font-weight: 600;
+}
+
+#locHorTxt {
+    font-weight: 300;
+    font-size: 17px;
+    margin-bottom: -10px;
+}
+
+#hor {
+    margin-bottom: -25px;
+}
+
+#horLin {
+    margin-bottom: -15px;
+}
+
+.menuDir {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#menuBurger {
+    width: 320px;
+    height: 320px;
+    margin-left: -400px;
+    margin-top: 20px;
+    border-radius: 1000px;
+}
+
+#backgroundMenuBurger {
+    width: 450px;
+    height: 370px;
+}
+
+/* CARDÁPIO */
