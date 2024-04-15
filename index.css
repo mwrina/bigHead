@@ -122,3 +122,14 @@ body {
 }
 
 /* CARDÁPIO */
+
+.cardapio {
+    text-align: center;
+}
+
+#cardapioTit {
+    box-sizing: border-box;
+    background-image: url("backgroundShape-02.png");
+    width: 100%;
+    height: 100px;
+}
