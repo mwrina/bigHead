@@ -159,24 +159,57 @@ body {
     background-color: rgba(0, 0, 0, .5);
     margin: 0 10% 0 10%;
     padding: 5px 0 5px 0;
-    width: 80%;
     font-size: 18px;
     border-radius: 10px;
 }
 
+/* CARDÁPIO HAMBURGUER */
+
 .cardBurger {
+    display: block;
+    justify-content: center;
     text-align: center;
-    width: 40%;
-    margin: 0 30% 0 30%;
+    width: 80%;
+    margin: 2% 10% 2% 10%;
+    background-color: rgba(187, 187, 187, .2);
 }
 
-#cardItmLin1 {
+.cardItm {
+    width: 95%;
+    padding: 0 2.5% 20px 2.5%;
+}
+
+.cardItmLin1 {
     display: flex;
     justify-content: space-between;
+    margin: 0 1.5% 1% 1.5%;
+    border-bottom: 1px solid #FFFFFF;
 }
 
-#cardItmLin2 {
+#nomeLanche {
     text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    width: fit-content;
+    margin: 2% 0 0 0;
+    padding: 0;
+}
+
+#preco {
+    font-size: 18px;
+    font-weight: 500;
+    width: fit-content;
+    margin: 2% 0 0 0;
+    padding: 0;
+}
+
+#descLanche {
+    color: #C5C5C5;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+    width: 95%;
+    margin: 0 0 0 1.5%;
 }
 
 
