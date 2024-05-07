@@ -7,10 +7,10 @@ body {
     margin: 0;
 }
 
-/* ================================================================ */
+/* ============================================================================================== */
 /* NAVBAR */
 
-.navbar {
+nav {
     display: flex;
     width: 80%;
     font-size: 20px;
@@ -21,7 +21,7 @@ body {
 
 .retNavbar {
     background-color: #AC5D00;
-    width: 40%;
+    width: 100%;
     height: 30px;
     margin-top: 30px;
     display: flex;
@@ -31,12 +31,12 @@ body {
 #logo {
     width: 100;
     height: 100px;
-    border-radius: 15px;
+    border-radius: 100px;
     margin: 0;
     padding: 0;
 }
 
-/* ================================================================ */
+/* ============================================================================================== */
 /* MENU */
 
 .menu {
@@ -49,8 +49,7 @@ body {
 }
 
 .menuEsq {
-    display: border-box;
-    width: 50%;
+    width: 40%;
     margin: 0;
 }
 
@@ -59,7 +58,7 @@ body {
     margin-bottom: -40px;
 }
 
-#msloganLin2 {
+#sloganLin2 {
     display: flex;
 }
 
@@ -118,7 +117,6 @@ body {
 .menuDir {
     display: flex;
     justify-content: center;
-    width: 50%;
     margin: 0;
 }
 
@@ -130,11 +128,12 @@ body {
     border-radius: 1000px;
 }
 
-#backgroundMenuBurger {
+#bgMenuBurger {
     width: 450px;
     height: 370px;
 }
 
+/* ============================================================================================== */
 /* CARDÁPIO */
 
 .cardapio {
@@ -143,7 +142,7 @@ body {
 }
 
 .cardTitNav {
-    background-image: url("backgroundShape-03.png");
+    background-image: url("bgShape02.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position-x: -5%;
@@ -168,20 +167,61 @@ body {
 }
 
 .cardBurger {
-    text-align: center;
-    width: 40%;
-    margin: 0 30% 0 30%;
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    margin: 5% 10% 0 10%;
+    background-color: rgba(155, 155, 155, .1);
 }
+
+.txtCardapio {
+    text-align: justify;
+    padding: 2% 3% 2% 3%;
+}
+
+#cardapioItm {
+    width: 100%;
+} 
 
 #cardItmLin1 {
     display: flex;
     justify-content: space-between;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: -10px;
+}
+
+#linha {
+    font-weight: 300;
 }
 
 #cardItmLin2 {
     text-align: left;
+    color: #C5C5C5;
+    font-weight: 300;
+    font-size: 16px;
+    margin: -30px 0 0 0;
 }
 
+/* ============================================================================================== */
+/* CONTATO */
 
+#siganosDiv {
+    width: 100%;
+    height: 30%;
+    padding: 3% 0 5% 3%;
+    margin: 3% 0 0 0;
+    text-align: left;
+    background-image: url("bgShape03.png");
+    background-repeat: no-repeat;
+    background-size: 25% 100%;
+}
+
+#siganos {
+    font-family: "Khand";
+    font-size: 34px;
+    font-weight: 600;
+}
 
 
