@@ -224,4 +224,29 @@ nav {
     font-weight: 600;
 }
 
+.redesSociais {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 5% 5% 5%;
+}
 
+#redesIcon {
+    width: 9%;
+    height: 9%;
+}
+
+/* ============================================================================================== */
+/* FOOTER */
+
+footer {
+    background-color: #AC5D00;
+    display: flex;
+    justify-content: right;
+}
+
+#footerIcons {
+    width: 3%;
+    height: 3%;
+    margin: 0 1% 0 1%;
+}
