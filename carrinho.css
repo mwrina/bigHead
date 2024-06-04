@@ -38,14 +38,20 @@ nav {
 
 /* ============================================================================================== */
 /* CARRINHO */
-
-/* PRODUTO 1 */
 .carrinho {
     display: flex;
+    flex-direction: column;
     margin: 2% 10% 0 10%;
-    align-items: flex-start;
-}
+ }
 
+ /* CONTAINER DOS PRODUTOS */
+.produto-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+ }
+
+/* PRODUTO 1 */
 #imgProd1 {
    width: 158px;
    height: 158px; 
@@ -86,3 +92,46 @@ nav {
 #botaoRemove {
     margin-left: 25px;
 }
+
+/* PRODUTO 2 */
+#imgProd2 {
+    width: 158px;
+    height: 158px; 
+ }
+ 
+ .produto2 {
+     display: block;
+     margin-left: 30px;
+ }
+ 
+ #produtoTit {
+     font-size: 30px;
+     font-weight: 500;
+     margin-bottom: 0;
+ }
+ 
+ #qtd {
+     font-size: 25px;
+     font-weight: normal;
+     margin-top: 0;
+ }
+ 
+ .preco2 {
+     display: flex;
+     align-items: center;
+ }
+ 
+ #preco {
+     margin-left: 150px;
+     font-size: 30px;
+     font-weight: 500;
+ }
+ 
+ #botaoAdd {
+     margin-left: 30px;
+ }
+ 
+ #botaoRemove {
+     margin-left: 25px;
+ }
+ 
