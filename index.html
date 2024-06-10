@@ -4,27 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="indexDesktop.css">
+    <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 600px)" href="indexMobile.css">
     <title>Página Inicial</title>
 </head>
 <body>
 
     <!-- NAVBAR -->
 
-    <nav>
+    <nav class="desktopNavbar">
 
-        <div class="retNavbar">
+        <div class="retNavbar" id="retNavbarEsq">
             <a>MENU</a>
             <a>CARDÁPIO</a>
         </div>
 
-        <img id="logo" src="logo.jpg">
+        <img id="logo" src="imgs/logo.jpg">
         
-        <div class="retNavbar">
+        <div class="retNavbar" id="retNavbarDir">
             <a>CARRINHO</a>
             <a>CONTATO</a>
         </div>  
 
+    </nav>
+
+    <nav class="mobileSidebar">
+        <div class="col-menu">
+            <button class="open-sidebar-btn" id="menu">
+                <i class="material-icons" id="menuIcon">menu</i>
+            </button>
+        </div>
+        <div class="col-links">
+            <a>MENU</a>
+            <a>CARDÁPIO</a>
+            <a>CARRINHO</a>
+            <a>CONTATO</a>
+        </div>
     </nav>
 
     <!-- MENU -->
@@ -49,7 +65,7 @@
 
                 <div class="loc">
                     <div id="locHorLin">
-                        <img id="locVector" src="locIcon.png">
+                        <img id="locVector" src="imgs/locIcon.png">
                         <h2 id="locHorTit">ONDE ESTAMOS?</h2>
                     </div>
                     <div id="locHorLin">
@@ -59,7 +75,7 @@
 
                 <div class="hor">
                     <div id="locHorLin">
-                        <img id="horVector" src="horIcon.png">
+                        <img id="horVector" src="imgs/horIcon.png">
                         <h2 id="locHorTit">HORÁRIOS</h2>
                     </div>
 
@@ -73,8 +89,8 @@
         </div>
 
         <div class="menuDir">
-            <img id="bgMenuBurger" src="bgShape01.png">
-            <img id="menuBurger" src="lilSaladBacon.png">
+            <!-- <img id="bgMenuBurger" src="imgs/bgShape01.png"> -->
+            <img id="menuBurger" src="imgs/lilSaladBacon.png">
         </div>
 
     </div>
@@ -266,19 +282,23 @@
         </div>
 
         <div class="redesSociais">
-            <img src="wpp.png" id="redesIcon">
-            <img src="fb.png" id="redesIcon">
-            <img src="ig.png" id="redesIcon">
-            <img src="ifood.png" id="redesIcon">
+            <img src="imgs/wpp.png" id="redesIcon">
+            <img src="imgs/fb.png" id="redesIcon">
+            <img src="imgs/ig.png" id="redesIcon">
+            <img src="imgs/ifood.png" id="redesIcon">
         </div>
 
     </div>
 
-    <footer>
-        <img src="ifoodIcon.png" id="footerIcons">
-        <img src="igIcon.png" id="footerIcons">
-        <img src="fbIcon.png" id="footerIcons">
+    <footer class="footer">
+        <div class="footerIcons">
+            <img src="imgs/ifoodIcon.png" id="footerIcons">
+            <img src="imgs/igIcon.png" id="footerIcons">
+            <img src="imgs/fbIcon.png" id="footerIcons">
+        </div>
     </footer>
+
+    <script src="sidebar.js"></script>
 
 </body>
 </html>

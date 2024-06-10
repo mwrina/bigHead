@@ -5,6 +5,9 @@ body {
     background-color: #000000;
     color: #FFFFFF;
     margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* ============================================================================================== */
@@ -14,84 +17,35 @@ body {
     display: none;
 }
 
-/* sidebar menu */
-.sidenavbar {
-    height: 100%;
-    width: 0; /* initial width is set to 0, slide happens with JS */
-    position: fixed; /* keeps sidenavbar in place */
-    z-index: 1000; /* makes sidenavbar stay on top */
-    overflow-x: hidden; /* prevents unwanted scrollbar */
-    top: 0;
-    left: 0;
-    background-color: darkBlue;
-    transition: all ease-in 0.5s;
-    a {
-      padding: 7px 14px 3px 14px;
-      text-decoration: none;
-      font-size: 20px;
-      color: lightGreen;
-      display: block;
-      transition: all ease 0.3s;
-      text-align: center;
-    }
-    .top {
-      /* to drop the first link down from the top. Not neccessary, simply an aestetic preference */
-      margin-top: 35px;
-    }
-    a:hover {
-      color: #FFF;
-    }
-}
-.openbtn {
-    cursor: pointer;
-    color: white;
-    background-color: darkBlue;
-    border: none;
-    height: 40px;
-    width: 40px;
+.mobileSidebar {
     position: fixed;
-    top: 75px;
-    transition: all ease-in .5s;
-    border-radius:  0 5px 5px 0;
-    z-index: 999;
-  }
-.openbtn:hover {
-    background-color: lightGreen;
-}
-
-/* double chevron wrapped in a span */
-#chevron {
-    transition: all ease-in  .5s;
-    float: right;
-    font-size: 20px;
-    margin-right: 5px;
-    color: #FFF;  
-}
-
-/* styling for the corner banners */
-#bannerLinks {
-    width: 220px;
-    height: 220px;
-    position: fixed;
-    top: 0;
+    display: flex;
+    justify-content: left;
     right: 0;
-    transform: rotate(45deg);
-    a {
-        display: block;
-        background: rgb(74, 0, 105);
-        color: white;
-        text-align: center;
-        line-height: 21px;
-        height: 21px;
-        font-size: 15px;
-        text-decoration: none;
-        margin: 3px;
-        font-family: Tahoma, Geneva, Verdana, sans-serif;
-        &:nth-child(2) {
-            background-color: #838383;
-        }
-        &:hover {
-            text-transform: uppercase;
-        }
-    }
+    top: 0;
+    margin: 0;
+    padding: 3% 4% 0 4%;
+    width: 40%;
+    height: 100%;
+    font-size: 30px;
+    background-color: #AC5D00;
 }
+
+.col-menu {
+    margin: 0 15% 0 5%;
+    padding: 0;
+}
+
+#menuIcon {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.col-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+}
+

@@ -5,6 +5,9 @@ body {
     background-color: #000000;
     color: #FFFFFF;
     margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* ============================================================================================== */
@@ -16,10 +19,10 @@ body {
 
 .desktopNavbar {
     display: flex;
-    width: 80%;
+    width: 85%;
     font-size: 20px;
     /* TOPO DIREITA BAIXO ESQUERDA */
-    margin: 2% 10% 0 10%;
+    padding: 2% 7.5% 0 7.5%;
     justify-content: space-evenly;
 }
 
@@ -28,14 +31,22 @@ body {
     width: 100%;
     height: 30px;
     margin-top: 30px;
+    padding: 0.2%;
     display: flex;
     justify-content: space-evenly;
+}
+
+#retNavbarEsq {
+    border-radius: 10px 0 0 10px;
+}
+
+#retNavbarDir {
+    border-radius: 0 10px 10px 0;
 }
 
 #logo {
     width: 100;
     height: 100px;
-    border-radius: 20px;
     margin: 0;
     padding: 0;
 }
@@ -44,16 +55,17 @@ body {
 /* MENU */
 
 .menu {
-    width: 80%;
+    width: 85%;
     padding-top: 50px;
     /* TOPO DIREITA BAIXO ESQUERDA */
-    margin: 0 10% 0px 10%;
+    padding: 2.5% 7.5% 0px 7.5%;
     display: flex;
     justify-content: space-between;
 }
 
 .menuEsq {
-    width: 50%;
+    width: 60%;
+    margin: 0;
 }
 
 #sloganLin1 {
@@ -76,7 +88,7 @@ body {
 }
 
 .locHor {
-    margin-bottom: 0;
+    margin: 0;
     line-height: 40px;
 }
 
@@ -93,7 +105,7 @@ body {
 #locVector {
     width: 15px;
     height: 20px;
-    margin: 5px 5px 0 0;
+    margin: 1.7% 1% 0 0;
 }
 
 #locHorTit {
@@ -114,27 +126,25 @@ body {
 #horVector {
     width: 17px;
     height: 17px;
-    margin: 5px 5px 0 0;
+    margin: 2% 1% 0 0;
 }
 
 .menuDir {
+    width: 40%;
     display: flex;
-    justify-content: right;
-    width: 50%;
-    margin-right: 100px;
+    justify-content: center;
+    margin: 0;
+    background-image: url('imgs/bgShape01.png');
+    background-size: 100% 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
 }
 
 #menuBurger {
-    width: 320px;
-    height: 320px;
-    margin-left: -400px;
-    margin-top: 20px;
+    width: 80%;
+    height: 95%;
+    margin: 2% 0 0 0;
     border-radius: 1000px;
-}
-
-#bgMenuBurger {
-    width: 450px;
-    height: 370px;
 }
 
 /* ============================================================================================== */
@@ -146,11 +156,11 @@ body {
 }
 
 .cardTitNav {
-    background-image: url("bgShape02.png");
+    background-image: url("imgs/bgShape02.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position-x: -5%;
-    padding: 40px 0 70px 0;
+    padding: 5% 0 7% 0;
     justify-content: center;
 }
 
@@ -217,14 +227,15 @@ body {
     padding: 3% 0 5% 3%;
     margin: 3% 0 0 0;
     text-align: left;
-    background-image: url("bgShape03.png");
+    background-image: url("imgs/bgShape03.png");
     background-repeat: no-repeat;
     background-size: 25% 100%;
 }
 
 #siganos {
+    padding-left: 5%;
     font-family: "Khand";
-    font-size: 34px;
+    font-size: 26px;
     font-weight: 600;
 }
 
@@ -236,21 +247,31 @@ body {
 }
 
 #redesIcon {
-    width: 9%;
-    height: 9%;
+    width: 6%;
+    height: 6%;
 }
 
 /* ============================================================================================== */
 /* FOOTER */
 
-footer {
+.footer {
     background-color: #AC5D00;
     display: flex;
     justify-content: right;
+    width: 100%;
+    height: 30px;
+    padding: 0.3% 3% 0.3% 0;
+    margin: 0;
+}
+
+.footerIcons {
+    width: 30%;
+    height: 100%;
+    margin: 0;
 }
 
 #footerIcons {
-    width: 3%;
-    height: 3%;
-    margin: 0 1% 0 1%;
+    width: 7%;
+    height: 100%;
+    margin: 0 5% 0 5%;
 }
