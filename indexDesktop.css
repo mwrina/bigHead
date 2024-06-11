@@ -13,7 +13,7 @@ body {
 /* ============================================================================================== */
 /* NAVBAR */
 
-.mobileSidebar {
+.mobileTop {
     display: none;
 }
 
@@ -54,7 +54,11 @@ body {
 /* ============================================================================================== */
 /* MENU */
 
-.menu {
+.menuMobile {
+    display: none;
+}
+
+.menuDesktop {
     width: 85%;
     padding-top: 50px;
     /* TOPO DIREITA BAIXO ESQUERDA */

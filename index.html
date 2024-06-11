@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" media="screen and (min-width: 600px)" href="indexDesktop.css">
     <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 600px)" href="indexMobile.css">
@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR DESKTOP -->
 
     <nav class="desktopNavbar">
 
@@ -29,23 +29,30 @@
 
     </nav>
 
-    <nav class="mobileSidebar">
-        <div class="col-menu">
-            <button class="open-sidebar-btn" id="menu">
-                <i class="material-icons" id="menuIcon">menu</i>
-            </button>
-        </div>
-        <div class="col-links">
-            <a>MENU</a>
-            <a>CARDÁPIO</a>
-            <a>CARRINHO</a>
-            <a>CONTATO</a>
-        </div>
-    </nav>
+    <!-- SIDEBAR MOBILE -->
 
-    <!-- MENU -->
+    <div class="mobileTop">
 
-    <div class="menu">
+        <img id="logo" src="imgs/logo.jpg">
+
+        <nav class="mobileSidebar">
+            <div class="col-menu">
+                <button class="open-sidebar-btn" id="menu">
+                    <i class="material-icons" id="menuIcon">menu</i>
+                </button>
+            </div>
+            <div class="col-links">
+                <a>MENU</a>
+                <a>CARDÁPIO</a>
+                <a>CARRINHO</a>
+                <a>CONTATO</a>
+            </div>
+        </nav>
+    </div> 
+
+    <!-- MENU INICIAL - DESKTOP -->
+
+    <div class="menuDesktop">
         
         <div class="menuEsq">
 
@@ -89,8 +96,62 @@
         </div>
 
         <div class="menuDir">
-            <!-- <img id="bgMenuBurger" src="imgs/bgShape01.png"> -->
             <img id="menuBurger" src="imgs/lilSaladBacon.png">
+        </div>
+
+    </div>
+
+    <!-- MENU INICIAL - MOBILE -->
+
+    <div class="menuMobile">
+
+        <div class="boasVindas-container">
+            <h3 id="boasVindas">Seja bem vindo!</h3>
+            <img id="boasVindasImg" src="imgs/boasVindas.png">
+            <h2 id="slogan">Food truck de <b>Burgers artesanais</b> e <b>lanches prensados</b></h2>
+        </div>
+
+        <div class="menuBurger-container">
+            <img id="menuBurger" src="imgs/lilSaladBacon.png">
+        </div>
+
+        <div class="sobre-container">
+            
+            <div class="sobre">
+
+                <h2 id="sobreTit">SOBRE O BIG HEAD</h2>
+                
+                <div class="sobreDiv">
+
+                    <div class="sobreLin">
+                        <img id="locIcon" src="imgs/locIcon.png">
+                        <p id="sobreDivTit">ONDE ESTAMOS?</p>
+                    </div>
+                    <div class="sobreLin">
+                        <p id="endereco">Rua Expedicionario Holz, 622 - Joinville</p>
+                    </div>
+
+                    
+                </div>
+
+                <div class="sobreDiv">
+                    
+                    <div class="sobreLin">
+                        <img id="horIcon" src="imgs/horIcon.png">
+                        <p id="sobreDivTit">HORÁRIOS</p>
+                    </div>
+                    
+                    <div class="horarios">
+                        <div class="sobreLin">
+                            <p id="horarios">Domingo a Quarta-feira: 19h até 01h</p>
+                        </div>
+                        <div class="sobreLin">
+                            <p id="horarios">Quinta-feira a Sábado: 19h até 02h</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
     </div>
