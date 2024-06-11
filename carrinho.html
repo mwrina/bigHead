@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="indexDesktop.css">
     <link rel="stylesheet" href="carrinho.css">
     <title>Página Inicial</title>
 </head>
@@ -19,7 +19,7 @@
             <a>CARDÁPIO</a>
         </div>
 
-        <img id="logo" src="logo.jpg">
+        <img id="logo" src="imgs/logo.jpg">
         
         <div class="retNavbar">
             <a>CARRINHO</a>
@@ -28,22 +28,56 @@
 
     </nav>
 
-    <!-- CARRINHO -->
-    
-    <div class="carrinho"> 
-        
-        <!-- PRODUTO 1 -->
-        <img src="lilSaladBacon.png" id="imgProd1">
-        <div class="produto1">
-               <h1 id="produtoTit">Lil Salad Bacon</h1>
-              <h2 id="qtd">1x</h2>
+<!-- CARRINHO -->
+<div class="carrinho"> 
+
+<!-- PRODUTOS -->
+<div class="container-produtos">
+
+<!-- PRODUTO 1 -->
+<div class="produto">
+    <img src="imgs/lilSaladBacon.png" id="imgProd" alt="Lil Salad Bacon">
+        <div class = "prodInfo">
+            <h1 id="produtoTit">Lil Salad Bacon</h1>
+                <div class="quantidade">
+                    <h2 id="qtd">1x</h2>
+                        <div class="valor">
+                            <h2 id="preco"> R$24,90</h2>
+                            <button class="botaoAdd"><img src="imgs/add.png"></button>
+                            <button class="botaoRemove"><img src="imgs/remover.png"></button>
+                        </div>
+                </div>
         </div>
-        
-        <div class="preco1">
-            <h2 id="preco">R$24,90</h2>
-            <img src="add.png" id="botaoAdd">
-            <img src="remover.png" id="botaoRemove">
+</div>
+
+<!-- PRODUTO 2 -->
+<div class="produto">
+    <img src="imgs/CocaCola.png" id="imgProd" alt="Coca-Cola 600ml">
+        <div class = "prodInfo">
+            <h1 id="produtoTit">Coca-Cola 600ml</h1>
+                <div class="quantidade">
+                    <h2 id="qtd">1x</h2>
+                        <div class="valor">
+                            <h2 id="preco"> R$9,99</h2>
+                            <button class="botaoAdd"><img src="imgs/add.png"></button>
+                            <button class="botaoRemove"><img src="imgs/remover.png"></button>
+                        </div>
+                </div>
         </div>
+</div>
+</div>
+
+<!-- RESUMO DO PEDIDO -->
+    <div class="resumo-pedido">
+        <h2>Resumo do Pedido</h2>
+        <p>Lil Salad Bacon</p>
+        <p>R$24,90</p>
+        <p>Coca-cola 600ml</p>
+        <p>R$9,99</p>
+        <h3>Total: R$34,89</h3>
+        <button>Finalizar compra</button>
     </div>
 
-    
+
+</body>
+</html>

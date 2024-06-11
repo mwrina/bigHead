@@ -40,98 +40,91 @@ nav {
 /* CARRINHO */
 .carrinho {
     display: flex;
+    margin-left: 100px;
+    justify-content: space-between;
+    padding: 2.5% 7.5% 0px 7.5%;
+ }
+
+/* PRODUTOS */
+.container-produtos {
+    flex: 3;
+    display: flex;
     flex-direction: column;
-    margin: 2% 10% 0 10%;
- }
+}
 
- /* CONTAINER DOS PRODUTOS */
-.produto-container {
+.produto {
     display: flex;
-    align-items: center;
-    margin-bottom: 2%;
- }
+    margin-bottom: 20px;
+    padding: 10px;
+}
 
-/* PRODUTO 1 */
-#imgProd1 {
+/* IMAGENS DOS PRODUTOS */
+#imgProd {
    width: 158px;
-   height: 158px; 
+   height: 158px;
+   margin-right: 20px;
 }
 
-.produto1 {
-    display: block;
-    margin-left: 30px;
-}
-
-#produtoTit {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 0;
-}
-
-#qtd {
-    font-size: 25px;
-    font-weight: normal;
-    margin-top: 0;
-}
-
-.preco1 {
+.prodInfo {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* NOME DO PRODUTO */
+#produtoTit {
+    padding-left: 5px;
+    font-weight: 500;
 }
 
 #preco {
-    margin-left: 150px;
-    font-size: 30px;
-    font-weight: 500;
+    padding-left: 5px;
+    font-weight: 400;
 }
 
-#botaoAdd {
-    margin-left: 30px;
+.quantidade {
+    display: block;
+    align-items: center;
 }
 
-#botaoRemove {
-    margin-left: 25px;
+#qtd {
+    padding-left: 5px;
+    font-weight: 350;
 }
 
-/* PRODUTO 2 */
-#imgProd2 {
-    width: 158px;
-    height: 158px; 
- }
- 
- .produto2 {
-     display: block;
-     margin-left: 30px;
- }
- 
- #produtoTit {
-     font-size: 30px;
-     font-weight: 500;
-     margin-bottom: 0;
- }
- 
- #qtd {
-     font-size: 25px;
-     font-weight: normal;
-     margin-top: 0;
- }
- 
- .preco2 {
-     display: flex;
-     align-items: center;
- }
- 
- #preco {
-     margin-left: 150px;
-     font-size: 30px;
-     font-weight: 500;
- }
- 
- #botaoAdd {
-     margin-left: 30px;
- }
- 
- #botaoRemove {
-     margin-left: 25px;
- }
- 
+.valor {
+    display: flex;
+    margin-left: 400px;
+}
+
+.quantidade button {
+    background-color: #000;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.resumo-pedido {
+    flex: 1;
+    padding: 20px;
+    border-radius: 1px;
+    box-shadow: 0 0 10px #AC5D00;
+    margin-right: 150px;
+}
+
+.resumo-pedido button {
+    width: 100%;
+    height: 50px;
+    background-color: #AC5D00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 750;
+    margin-top: 20px;
+}
+
+.resumo-pedido h2 {
+    margin-top: 0;
+}
+
