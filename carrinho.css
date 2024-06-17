@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
 
-body {
-    font-family: "Khand";
-    background-color: #000000;
-    color: #FFFFFF;
-    margin: 0;
-}
-
 /* ============================================================================================== */
 /* NAVBAR */
 
@@ -20,11 +13,11 @@ nav {
 }
 
 .retNavbar {
+    display: flex;
     background-color: #AC5D00;
     width: 100%;
     height: 30px;
     margin-top: 30px;
-    display: flex;
     justify-content: space-evenly;
 }
 
@@ -47,7 +40,6 @@ nav {
 
 /* PRODUTOS */
 .container-produtos {
-    flex: 3;
     display: flex;
     flex-direction: column;
 }
@@ -79,12 +71,14 @@ nav {
 }
 
 #preco {
+    display: flex;
     padding-left: 5px;
     margin-right: 10px;
     font-weight: 400;
 }
 
 #qtd {
+    display: flex;
     align-items: flex-start;
     padding-left: 5px;
     margin-right: 10px;
@@ -92,7 +86,7 @@ nav {
 }
 
 .quantidade {
-    display: block;
+    display: flex;
     align-items: center;
 }
 
@@ -104,6 +98,7 @@ nav {
 .valor {
     display: flex;
     margin-left: 400px;
+    justify-content: space-between;
 }
 
 .quantidade button {
@@ -114,7 +109,13 @@ nav {
 }
 
 .resumo-pedido {
-    flex: 1;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /* flex: 1; */
+    width: 385px;
+    height: 413px;
+    justify-content: center;
     padding: 20px;
     border-radius: 1px;
     box-shadow: 0 0 10px #AC5D00;
@@ -137,3 +138,28 @@ nav {
     margin-top: 0;
 }
 
+/* ============================================================================================== */
+/* FOOTER */
+
+
+.footer {
+    background-color: #AC5D00;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 30px;
+    padding: 0.3% 3% 0.3% 0;
+    margin: 0;
+}
+
+.footerIcons {
+    width: 30%;
+    height: 100%;
+    margin: 0;
+}
+
+#footerIcons {
+    width: 7%;
+    height: 100%;
+    margin: 0 5% 0 5%;
+}
