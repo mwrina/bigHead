@@ -5,7 +5,6 @@
 
 nav {
     display: flex;
-    width: 80%;
     font-size: 20px;
     /* TOPO DIREITA BAIXO ESQUERDA */
     margin: 2% 10% 0 10%;
@@ -33,9 +32,11 @@ nav {
 /* CARRINHO */
 .carrinho {
     display: flex;
-    margin-left: 100px;
+    flex-direction: row;
+    margin-left: 75px;
     justify-content: space-between;
     padding: 2.5% 7.5% 0px 7.5%;
+    padding-top: 50px;
  }
 
 /* PRODUTOS */
@@ -70,6 +71,11 @@ nav {
     font-weight: 500;
 }
 
+.quantidade {
+    display: flex;
+    align-items: center;
+}
+
 #preco {
     display: flex;
     padding-left: 5px;
@@ -77,28 +83,23 @@ nav {
     font-weight: 400;
 }
 
+.valor {
+    display: flex;
+    margin-left: 300px;
+    justify-content: space-between;
+}
+
 #qtd {
     display: flex;
     align-items: flex-start;
     padding-left: 5px;
-    margin-right: 10px;
+    margin-right: 5x;
     font-weight: 400;
-}
-
-.quantidade {
-    display: flex;
-    align-items: center;
 }
 
 .quantidade img {
     width: 30px;
     height: 30px;
-}
-
-.valor {
-    display: flex;
-    margin-left: 400px;
-    justify-content: space-between;
 }
 
 .quantidade button {
@@ -108,11 +109,13 @@ nav {
     cursor: pointer;
 }
 
+/* ============================================================================================== */
+/* RESUMO DO PEDIDO */
+
 .resumo-pedido {
     display: flex;
     text-align: center;
     flex-direction: column;
-    /* flex: 1; */
     width: 385px;
     height: 413px;
     justify-content: center;
@@ -122,9 +125,29 @@ nav {
     margin-right: 150px;
 }
 
-.resumo-pedido button {
-    width: 100%;
-    height: 50px;
+/* #pedido {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+} */
+
+#valor-pedido {
+    padding-left: 50px;
+}
+
+.resumo-pedido h2 {
+    margin-top: 0;
+}
+
+.finalizar-compra {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.finalizar-compra button {
+    width: 385px;
+    height: 62px;
     background-color: #AC5D00;
     color: #fff;
     border: none;
@@ -132,10 +155,7 @@ nav {
     font-size: 20px;
     font-weight: 750;
     margin-top: 20px;
-}
 
-.resumo-pedido h2 {
-    margin-top: 0;
 }
 
 /* ============================================================================================== */
