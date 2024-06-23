@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (min-width: 600px)" href="indexDesktop.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="style/indexDesktop.css">
     <link rel="stylesheet" href="carrinho.css">
     <title>Página Inicial</title>
 </head>
@@ -36,32 +36,32 @@
         <!-- PRODUTOS -->
         <div class="container-produtos">
 
-            <!-- PRODUTO 1 -->
+                        <!-- PRODUTO 1 -->
             <div class="produto">
                 <img src="imgs/lilSaladBacon.png" id="imgProd" alt="Lil Salad Bacon">
                 <div class="prodInfo">
                     <h1 id="produtoTit">Lil Salad Bacon</h1>
-                    <div class="quantidade">
+                    <div class="valor">
                         <h2 id="preco"> R$24,90</h2>
-                        <div class="valor">
-                            <h2 id="qtd">1x</h2>
+                        <div class="quantidade">
                             <button class="botaoAdd"><img src="imgs/add.png"></button>
+                            <h2 id="qtd">1x</h2>
                             <button class="botaoRemove"><img src="imgs/remover.png"></button>
                         </div>
                     </div>
                 </div>
             </div>
 
-<!-- PRODUTO 2 -->
+            <!-- PRODUTO 2 -->
             <div class="produto">
                 <img src="imgs/CocaCola.png" id="imgProd" alt="Coca-Cola 600ml">
                 <div class="prodInfo">
                     <h1 id="produtoTit">Coca-Cola 600ml</h1>
-                    <div class="quantidade">
+                    <div class="valor">
                         <h2 id="preco"> R$9,99</h2>
-                        <div class="valor">
-                            <h2 id="qtd">1x</h2>
+                        <div class="quantidade">
                             <button class="botaoAdd"><img src="imgs/add.png"></button>
+                            <h2 id="qtd">1x</h2>
                             <button class="botaoRemove"><img src="imgs/remover.png"></button>
                         </div>
                     </div>
@@ -69,27 +69,42 @@
             </div>
         </div>
 
-<!-- RESUMO DO PEDIDO -->
-        <div class="resumo-pedido">
-            <h2>Resumo do Pedido</h2>
-            <p id="pedido">Lil Salad Bacon <id='valor-pedido'>R$24,90</p>
-            <p id="pedido">Coca-cola 600ml <id="valor-pedido">R$9,99</p>
-            <h3>Total: R$34,89</h3>
-            <div class="finalizar-compra">
-                <button>Finalizar compra</button> 
-            </div>
-        </div>
-            
+ <!-- RESUMO DO PEDIDO -->
+ <div class="resumo-pedido">
+    <h2>Resumo do Pedido</h2>
+    <div class="pedido">
+        <span class="pedido-nome">Lil Salad Bacon</span> 
+        <span class="quantidade-item">1x</span>
+        <span class="pedido-valor">R$24,90</span>
+    </div>
+    <div class="pedido">
+        <span class="pedido-nome">Coca-cola 600ml</span> 
+        <span class="quantidade-item">1x</span>
+        <span class="pedido-valor">R$9,99</span>
+    </div>
+    <h3 class="total">
+        <span>TOTAL:</span>
+        <span class="total-valor">R$34,89</span>
+    </h3>
+    <div class="finalizar-compra">
+        <button>Finalizar compra</button> 
+    </div>
+</div>
+    
 </div>
 
+
 <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footerIcons">
-            <img src="imgs/ifoodIcon.png" id="footerIcons">
-            <img src="imgs/igIcon.png" id="footerIcons">
-            <img src="imgs/fbIcon.png" id="footerIcons">
-        </div>
-    </footer>
+<footer class="footer">
+    <div class="footerIcons">
+        <img src="imgs/wppIcon.png" class="footerIcon">
+        <img src="imgs/ifoodIcon.png" class="footerIcon" id="ifoodIcon">
+        <img src="imgs/igIcon.png" class="footerIcon">
+        <img src="imgs/fbIcon.png" class="footerIcon">
+    </div>
+</footer>
+
+
 
 
 

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
-
 /* ============================================================================================== */
 /* NAVBAR */
+
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
 
 nav {
     display: flex;
@@ -36,13 +36,15 @@ nav {
     margin-left: 75px;
     justify-content: space-between;
     padding: 2.5% 7.5% 0px 7.5%;
-    padding-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 4.5%;
  }
 
 /* PRODUTOS */
 .container-produtos {
     display: flex;
     flex-direction: column;
+    margin-left: 50px;
 }
 
 .produto {
@@ -71,7 +73,7 @@ nav {
     font-weight: 500;
 }
 
-.quantidade {
+.valor {
     display: flex;
     align-items: center;
 }
@@ -83,17 +85,17 @@ nav {
     font-weight: 400;
 }
 
-.valor {
+.quantidade {
     display: flex;
-    margin-left: 300px;
-    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
 }
 
 #qtd {
     display: flex;
-    align-items: flex-start;
+    align-items: center; 
     padding-left: 5px;
-    margin-right: 5x;
+    margin-right: 5px; 
     font-weight: 400;
 }
 
@@ -103,6 +105,7 @@ nav {
 }
 
 .quantidade button {
+    display: flex;
     background-color: #000;
     border: none;
     margin: 0 5px;
@@ -114,39 +117,69 @@ nav {
 
 .resumo-pedido {
     display: flex;
-    text-align: center;
     flex-direction: column;
     width: 385px;
-    height: 413px;
-    justify-content: center;
     padding: 20px;
-    border-radius: 1px;
-    box-shadow: 0 0 10px #AC5D00;
-    margin-right: 150px;
-}
-
-/* #pedido {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-} */
-
-#valor-pedido {
-    padding-left: 50px;
+    border-radius: 10px;
+    box-decoration-break:  0 0 10px #AC5D00;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Khand', sans-serif;
+    margin-right: 100px;
+    padding-top: 3%;
 }
 
 .resumo-pedido h2 {
     margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 2px solid #AC5D00;
+    padding-bottom: 10px;
+}
+
+.pedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.quantidade-item {
+    font-size: 14px;
+    margin-left: 25px;
+    align-items: center;
+    color: #ccc;
+}
+
+.pedido-valor {
+    margin-left: auto;
+    padding-left: 20px;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    border-top: 2px solid #AC5D00;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-valor {
+    font-weight: 500;
 }
 
 .finalizar-compra {
     display: flex;
-    text-align: center;
-    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .finalizar-compra button {
-    width: 385px;
+    width: 100%;
     height: 62px;
     background-color: #AC5D00;
     color: #fff;
@@ -154,32 +187,39 @@ nav {
     cursor: pointer;
     font-size: 20px;
     font-weight: 750;
-    margin-top: 20px;
-
+    font-family: 'Khand', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
 }
 
 /* ============================================================================================== */
 /* FOOTER */
-
 
 .footer {
     background-color: #AC5D00;
     display: flex;
     justify-content: right;
     width: 100%;
-    height: 30px;
-    padding: 0.3% 3% 0.3% 0;
+    height: 5%;
+    padding: 1% 0 0.5% 0;
     margin: 0;
 }
 
 .footerIcons {
+    align-items: center;
     width: 30%;
     height: 100%;
     margin: 0;
 }
 
-#footerIcons {
+.footerIcon {
     width: 7%;
     height: 100%;
     margin: 0 5% 0 5%;
+}
+
+#ifoodIcon {
+    width: 9%;
+    height: 100%;
+    margin: 0 5% 0.7% 5%;
 }
