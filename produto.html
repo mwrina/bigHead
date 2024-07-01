@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/produto.css">
-    <link rel="shortcut icon" href="imgs/locIcon.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="imgs/logo.jpg">
     <title>Produto</title>
 </head>
 <body>
@@ -15,18 +15,39 @@
     <nav class="desktopNavbar">
 
         <div class="retNavbar" id="retNavbarEsq">
-            <a>MENU</a>
-            <a>CARDÁPIO</a>
+            <a href="index.html">MENU</a>
+            <a href="index.html#cardTit">CARDÁPIO</a>
         </div>
 
         <img id="logo" src="imgs/logo.jpg">
         
         <div class="retNavbar" id="retNavbarDir">
-            <a>CARRINHO</a>
-            <a>CONTATO</a>
+            <a href="carrinho.html">CARRINHO</a>
+            <a href="index.html#siganos">CONTATO</a>
         </div>  
 
     </nav>
+
+    <!-- SIDEBAR MOBILE -->
+
+    <div class="mobileTop">
+
+        <img id="logo" src="imgs/logo.jpg">
+
+        <nav class="mobileSidebar">
+            <div class="colMenu">
+                <button class="openSidebarBtn" id="menu">
+                    <i class="material-icons" id="menuIcon">menu</i>
+                </button>
+            </div>
+            <div class="colLinks">
+                <a href="index.html">MENU</a>
+                <a href="index.html#cardTit">CARDÁPIO</a>
+                <a href="carrinho.html">CARRINHO</a>
+                <a href="index.html#siganos">CONTATO</a>
+            </div>
+        </nav>
+    </div> 
 
     <!-- MENU -->
     <div class="container menu mt-5">
@@ -58,8 +79,8 @@
         <div class="footerIcons">
             <img src="imgs/wppIcon.png" class="footerIcon">
             <img src="imgs/ifoodIcon.png" class="footerIcon" id="ifoodIcon">
-            <img src="imgs/igIcon.png" class="footerIcon">
-            <img src="imgs/fbIcon.png" class="footerIcon">
+            <img src="imgs/igIcon.png" class="footerIcon" id="igFbIcon">
+            <img src="imgs/fbIcon.png" class="footerIcon" id="igFbIcon">
         </div>
     </footer>
 

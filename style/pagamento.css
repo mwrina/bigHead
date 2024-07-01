@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+
+html, body {
+    font-family: "Khand", sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+a:any-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* ============================================================================================== */
+/* NAVBAR */
+
+.mobileTop {
+    display: none;
+}
+
+.desktopNavbar {
+    display: flex;
+    width: 85%;
+    font-size: 20px;
+    /* TOPO DIREITA BAIXO ESQUERDA */
+    padding: 2% 7.5% 0 7.5%;
+    justify-content: space-evenly;
+}
+
+.retNavbar {
+    background-color: #AC5D00;
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    padding: 0.2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#retNavbarEsq {
+    border-radius: 10px 0 0 10px;
+}
+
+#retNavbarDir {
+    border-radius: 0 10px 10px 0;
+}
+
+#logo {
+    width: 7%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================================== */
+/* MAIN */
+
+.form {
+    background-color: #000000;
+    border-radius: 10px;
+    width: 85%;
+    /* TOPO DIREITA BAIXO ESQUERDA */
+    padding: 2% 7.5% 0 7.5%;
+}
+
+.form label {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 1%;
+}
+
+.input {
+    width: 95%;
+    height: 5%;
+    padding: 0.5%;
+    margin-bottom: 1%;
+    border: 5px solid #AC5D00;
+    border-radius: 5px;
+    font-family: "Khand", sans-serif;;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#finalizarCompra {
+    background-color: #AC5D00;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 1% 2%;
+    margin-top: 5%;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Khand", sans-serif;;
+}
+
+/* ================================================================== */
+/* FOOTER */
+
+.footer {
+    background-color: #AC5D00;
+    position:fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: right;    
+    width: 100%;
+    padding: 0.5% 0 0;
+    margin-top: auto;
+}
+
+.footerIcons {
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+}
+
+.footerIcon {
+    width: 7%;
+    height: 100%;
+    margin: 0 5% 0 5%;
+}
+
+#ifoodIcon {
+    width: 9%;
+    height: 100%;
+    margin: 0 5% 0.7% 5%;
+}
+
+#igFbIcon {
+    width: 8%;
+    height: 100%;
+}
+
+
+@media (max-width: 600px) {
+
+    .desktopNavbar {
+        display: none;
+    }
+    
+    .mobileTop {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 15%;
+    }
+    
+    #logo {
+        width: 20%;
+        height: 20%;
+    }
+    
+    .mobileSidebar {
+        position: fixed;
+        display: flex;
+        justify-content: left;
+        right: 0;
+        top: 0;
+        padding: 1% 0 0 0.75%;
+        width: 25%;
+        height: 100%;
+        font-size: 13px;
+        border-radius: 10px 0 0 10px;
+        background-color: #AC5D00;
+    }
+    
+    .colMenu {
+        width: 10%;
+        margin: 0 20% 0 0;
+        padding: 0;
+    }
+    
+    .openSidebarBtn {
+        background-color: #AC5D00;
+        border: none;
+    }
+    
+    #menuIcon {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .colLinks {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        line-height: 30px;
+    }
+
+    .form label {
+        font-size: 16px;
+        display: block;
+        margin: 2.5% 0 1% 0;
+    }
+
+    .input {
+        width: 100%;
+        height: 5%;
+        padding: 0.5%;
+        margin-bottom: 5%;
+        border: 2px solid #AC5D00;
+        border-radius: 5px;
+        font-family: "Khand", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #pagamento {
+        width: 100%;
+        height: 5%;
+        padding: 0.5% 5% 0.5% 0.5% ;
+        margin-bottom: 5%;
+        border: 2px solid #AC5D00;
+        border-radius: 5px;
+        font-family: "Khand", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #finalizarCompra {
+        background-color: #AC5D00;
+        color: #FFFFFF;
+        font-size: 18px;
+        padding: 1% 2%;
+        margin-top: 20%;
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "Khand", sans-serif;;
+    }
+
+    .footer {
+        background-color: #AC5D00;
+        position:fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: right;    
+        width: 100%;
+        padding: 0.5% 0 0;
+        margin-top: auto;
+    }
+    
+    .footerIcons {
+        align-items: center;
+        width: 60%;
+        height: 100%;
+        margin: 0;
+    }
+    
+    .footerIcon {
+        width: 9%;
+        height: 100%;
+        margin: 0 5% 0 5%;
+    }
+    
+    #ifoodIcon {
+        width: 14%;
+        height: 100%;
+        margin: 0 5% 0.7% 5%;
+    }
+    
+    #igFbIcon {
+        width: 10%;
+        height: 100%;
+    }
+}

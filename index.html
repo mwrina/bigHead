@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
+    <link rel="icon" type="image/x-icon" href="imgs/logo.jpg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" media="screen and (min-width: 600px)" href="style/indexDesktop.css">
     <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 600px)" href="style/indexMobile.css">
@@ -16,15 +17,15 @@
     <nav class="desktopNavbar">
 
         <div class="retNavbar" id="retNavbarEsq">
-            <a>MENU</a>
-            <a>CARDÁPIO</a>
+            <a href="index.html">MENU</a>
+            <a href="index.html#cardTit">CARDÁPIO</a>
         </div>
 
         <img id="logo" src="imgs/logo.jpg">
         
         <div class="retNavbar" id="retNavbarDir">
-            <a>CARRINHO</a>
-            <a>CONTATO</a>
+            <a href="carrinho.html">CARRINHO</a>
+            <a href="index.html#siganos">CONTATO</a>
         </div>  
 
     </nav>
@@ -42,838 +43,841 @@
                 </button>
             </div>
             <div class="colLinks">
-                <a>MENU</a>
-                <a>CARDÁPIO</a>
-                <a>CARRINHO</a>
-                <a>CONTATO</a>
+                <a href="index.html">MENU</a>
+                <a href="index.html#cardTit">CARDÁPIO</a>
+                <a href="carrinho.html">CARRINHO</a>
+                <a href="index.html#siganos">CONTATO</a>
             </div>
         </nav>
     </div> 
 
     <!-- MENU INICIAL - DESKTOP -->
 
-    <div class="menuDesktop">
-        
-        <div class="menuEsq">
+    <main>
 
-            <div class="slogan">
-                <div id="sloganLin1">
-                    <h1 id="sloganNormal">Food truck de</h1>
-                    <h1 id="sloganDestacado">Burgers artesanais</h1>
-                    <h1 id="sloganNormal">e</h1>
-                    <h1 id="sloganDestacado"></h1>                
+        <div class="menuDesktop">
+            
+            <div class="menuEsq">
+
+                <div class="slogan">
+                    <div id="sloganLin1">
+                        <h1 id="sloganNormal">Food truck de</h1>
+                        <h1 id="sloganDestacado">Burgers artesanais</h1>
+                        <h1 id="sloganNormal">e</h1>             
+                    </div>
+                    <div id="sloganLin2">
+                        <h1 id="sloganDestacado">Lanches prensados</h1>
+                    </div>
                 </div>
-                <div id="sloganLin2">
-                    <h1 id="sloganDestacado"> Lanches prensados</h1>
+            
+                <div class="locHor">
+
+                    <div class="loc">
+                        <div id="locHorLin">
+                            <img id="locVector" src="imgs/locIcon.png">
+                            <h2 id="locHorTit">ONDE ESTAMOS?</h2>
+                        </div>
+                        <div id="locHorLin">
+                            <p id="locHorTxt">Rua Expedicionário Holtz, 622 - Joinville</p>
+                        </div>
+                    </div>
+
+                    <div class="hor">
+                        <div id="locHorLin">
+                            <img id="horVector" src="imgs/horIcon.png">
+                            <h2 id="locHorTit">HORÁRIOS</h2>
+                        </div>
+
+                        <p id="locHorTxt">Domingo a Quarta-feira: 19h até 01h</p>
+                        <p id="locHorTxt">Quinta-feira a Sábado: 19h até 02h</p>
+                    </div>
+
                 </div>
+                                    
+
             </div>
-        
-            <div class="locHor">
 
-                <div class="loc">
-                    <div id="locHorLin">
-                        <img id="locVector" src="imgs/locIcon.png">
-                        <h2 id="locHorTit">ONDE ESTAMOS?</h2>
-                    </div>
-                    <div id="locHorLin">
-                        <p id="locHorTxt">Rua Expedicionário Holtz, 622 - Joinville</p>
-                    </div>
-                </div>
-
-                <div class="hor">
-                    <div id="locHorLin">
-                        <img id="horVector" src="imgs/horIcon.png">
-                        <h2 id="locHorTit">HORÁRIOS</h2>
-                    </div>
-
-                    <p id="locHorTxt">Domingo a Quarta-feira: 19h até 01h</p>
-                    <p id="locHorTxt">Quinta-feira a Sábado: 19h até 02h</p>
-                </div>
-
+            <div class="menuDir">
+                <img id="menuBurger" src="imgs/lilSaladBacon.png">
             </div>
-                                 
 
         </div>
 
-        <div class="menuDir">
-            <img id="menuBurger" src="imgs/lilSaladBacon.png">
-        </div>
+        <!-- MENU INICIAL - MOBILE -->
 
-    </div>
+        <div class="menuMobile">
 
-    <!-- MENU INICIAL - MOBILE -->
+            <div class="boasVindasContainer">
+                <h3 id="boasVindas">Seja bem vindo!</h3>
+                <img id="boasVindasImg" src="imgs/boasVindas.png">
+                <h2 id="slogan">Food truck de <b>Burgers artesanais</b> e <b>lanches prensados</b></h2>
+            </div>
 
-    <div class="menuMobile">
+            <div class="menuBurgerContainer">
+                <img id="menuBurger" src="imgs/lilSaladBacon.png">
+            </div>
 
-        <div class="boasVindasContainer">
-            <h3 id="boasVindas">Seja bem vindo!</h3>
-            <img id="boasVindasImg" src="imgs/boasVindas.png">
-            <h2 id="slogan">Food truck de <b>Burgers artesanais</b> e <b>lanches prensados</b></h2>
-        </div>
+            <div class="sobreContainer">
 
-        <div class="menuBurgerContainer">
-            <img id="menuBurger" src="imgs/lilSaladBacon.png">
-        </div>
+                <div class="sobre">
 
-        <div class="sobreContainer">
-
-            <div class="sobre">
-
-                <h2 id="sobreTit">SOBRE O BIG HEAD</h2>
-                
-                <div class="sobreDiv">
-
-                    <div class="sobreLin">
-                        <img id="locIcon" src="imgs/locIcon.png">
-                        <p id="sobreDivTit">ONDE ESTAMOS?</p>
-                    </div>
-                    <div class="sobreLin">
-                        <p id="endereco">Rua Expedicionario Holz, 622 - Joinville</p>
-                    </div>
-
-                </div>
-
-                <div class="sobreDiv">
+                    <h2 id="sobreTit">SOBRE O BIG HEAD</h2>
                     
-                    <div class="sobreLin">
-                        <img id="horIcon" src="imgs/horIcon.png">
-                        <p id="sobreDivTit">HORÁRIOS</p>
+                    <div class="sobreDiv">
+
+                        <div class="sobreLin">
+                            <img id="locIcon" src="imgs/locIcon.png">
+                            <p id="sobreDivTit">ONDE ESTAMOS?</p>
+                        </div>
+                        <div class="sobreLin">
+                            <p id="endereco">Rua Expedicionario Holz, 622 - Joinville</p>
+                        </div>
+
                     </div>
+
+                    <div class="sobreDiv">
+                        
+                        <div class="sobreLin">
+                            <img id="horIcon" src="imgs/horIcon.png">
+                            <p id="sobreDivTit">HORÁRIOS</p>
+                        </div>
+                        
+                        <div class="horarios">
+                            <p id="horarios">Domingo a Quarta-feira: 19h até 01h</p>
+                            <p id="horarios">Quinta-feira a Sábado: 19h até 02h</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CARDAPIO -->
+
+        <div class="cardapio">       
+
+            <div class="cardTitNav">
+
+
+                <div class="cardTitContainer">
+                    <h1 id="cardTit">CARDÁPIO</h1>
+                </div>
+
+                <div class="navCardapio">
+                    <button type="button" id="navCardBurgers" class="navCardBtns">Burgers</button>
+                    <button type="button" id="navCardCombos" class="navCardBtns">Combos</button> 
+                    <button type="button" id="navCardLanTrads" class="navCardBtns">Lanches Tradicionais</button>
+                    <button type="button" id="navCardFritas" class="navCardBtns">Fritas Artesanais</button>
+                    <button type="button" id="navCardBebidas" class="navCardBtns">Bebidas</button>
+                </div>
+
+            </div>
+
+            <!-- CARDAPIO HAMBURGUERES -->
+
+            <div class="card" id="cardBurgers">
+                
+                <div class="txtCardapio">
+            
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Cheese Burger</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$10,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão cervejinha, burger 60g, queijo cheddar e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Cheese Salad</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$12,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão cervejinha, burger 60g, queijo mussarela, alface americana, tomate e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Big Costela Bacon</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$17,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão cervejinha, burger 80g, queijo cheddar, bacon, alface americana, tomate e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm" href="produto.html">
+                        <div id="cardItmLin1">
+                            <p id="nome">Lil Cheddar</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$15,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão cervejinha, burger 120g, cheddar fatiado e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Lil Salad Bacon</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$24,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão cervejinha, burger 120g, tiras de bacon, cheddar fatiado, alface americana, tomate e molho especial.</p>
+                        </div>
+                    </a>
+        
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Big Cheese</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$26,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão brioche, burger 160g, queijo mussarela e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Texas</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$31,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão brioche, burger 160g, queijo mussarela, alface americana, tomate, picles, cebola roxa e molho especial.</p>
+                        </div>
+                    </a>
                     
-                    <div class="horarios">
-                        <p id="horarios">Domingo a Quarta-feira: 19h até 01h</p>
-                        <p id="horarios">Quinta-feira a Sábado: 19h até 02h</p>
-                    </div>
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Big Cheddar</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$26,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão brioche, burger 160g, queijo cheddar e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Bacon Cheddar</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$31,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão brioche, burger 160g, queijo cheddar, tiras de bacon e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Big Triple Smash</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$35,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão brioche, 3 smash burgers 80g (240g), tiras de bacon, queijo cheddar e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Double Smash Bacon</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$31,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão brioche, burger 160g, queijo cheddar, tiras de bacon e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">BigHead</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$32,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão brioche, burger de 160g, queijo cheddar, tiras de bacon, cebola caramelizada , alface americana, tomate e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Double Bacon Cheddar</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$37,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão brioche, 2 burger 160g, tiras de bacon, queijo cheddar e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Big Bacon Melt</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$32,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão brioche, burger 160g, queijo cheddar, cebola caramelizada, tiras de bacon e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Double BigHead</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$41,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão brioche, 2 Burgers 160g, queijo cheddar, tiras de bacon, cebola caramelizada, alface americana, tomate e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Super Big American</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$41,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão brioche, burger 200g recheado com mussarela, coberto com american cheese, tiras de bacon crocante e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Super BigHead</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$41,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão brioche, burger 200g recheado com mussarela, coberto com cheddar fatiado, tiras de bacon e molho especial.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">SS Bacon Cheddar</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$24,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão cervejinha, burger 120g recheado com mussarela, coberto com cheddar fatiado, tiras de bacon e molho especial.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARDÁPIO DE COMBOS -->
+
+            <div class="card" id="cardCombos">
+                
+                <div class="txtCardapio">
+            
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Combo Big Date</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$39,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">2 Costela Bacon + 200g fritas artesanais + Coca-cola 350ml + maionese caseira. </p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Lil Salad Bacon + Refri</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$27,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Burger de 120g, tiras de bacon, queijo cheddar fatiado, alface americana, tomate e molho especial com pão cervejinha. Acompanha bebida 350ml.</p>
+                        </div>
+                    </a>
+        
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Combo Big Family</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$64,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">5 Big Costela + Refrigerante 600ml. Burger de 80g queijo cheddar, bacon, alface americana, tomate e molho especial num pão cervejinha.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Big Cheese + Refri Promo</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$29,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Burger de 160g, queijo mussarela e molho especial, pão brioche artesanal de fermentação natural. Acompanha bebida 350ml.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Combo Big Friends</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$69,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">2 Double Smash Bacon + 200g de fritas fininha artesanal + Coca Cola 350ml + pote de maionese artesanal 100ml.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Big Costela Bacon em Dobro</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$29,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">2 Sanduíches: Burger 80g, queijo cheddar, bacon, alface americana, tomate e molho especial, pão cervejinha.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Combo Big Costela + Refri</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$17,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Burger 80g, queijo mussarela, alface americana, tomate e molho especial, pão cervejinha. Acompanha bebida lata 350ml.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Combo Big Love</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$69,90</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">2 Bacon Cheddar + 200g de fritas fininha artesanal + Coca Cola 350ml + pote de maionese artesanal 100ml.</p>
+                        </div>
+                    </a>
 
                 </div>
             </div>
-        </div>
 
-    </div>
-
-    <!-- CARDAPIO -->
-
-    <div class="cardapio">       
-
-        <div class="cardTitNav">
-
-
-            <div class="cardTitContainer">
-                <h1 id="cardTit">CARDÁPIO</h1>
-            </div>
-
-            <div class="navCardapio">
-                <button type="button" id="navCardBurgers" class="navCardBtns">Burgers</button>
-                <button type="button" id="navCardCombos" class="navCardBtns">Combos</button> 
-                <button type="button" id="navCardLanTrads" class="navCardBtns">Lanches Tradicionais</button>
-                <button type="button" id="navCardFritas" class="navCardBtns">Fritas Artesanais</button>
-                <button type="button" id="navCardBebidas" class="navCardBtns">Bebidas</button>
-            </div>
-
-        </div>
-
-        <!-- CARDAPIO HAMBURGUERES -->
-
-        <div class="card" id="cardBurgers">
-            
-            <div class="txtCardapio">
-          
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Cheese Burger</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$10,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão cervejinha, burger 60g, queijo cheddar e molho especial.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Cheese Salad</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$12,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão cervejinha, burger 60g, queijo mussarela, alface americana, tomate e molho especial.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Big Costela Bacon</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$17,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão cervejinha, burger 80g, queijo cheddar, bacon, alface americana, tomate e molho especial.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Lil Cheddar</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$15,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão cervejinha, burger 120g, cheddar fatiado e molho especial.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Lil Salad Bacon</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$24,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão cervejinha, burger 120g, tiras de bacon, cheddar fatiado, alface americana, tomate e molho especial.</p>
-                    </div>
-                </a>
-    
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Big Cheese</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$26,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão brioche, burger 160g, queijo mussarela e molho especial.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Texas</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$31,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão brioche, burger 160g, queijo mussarela, alface americana, tomate, picles, cebola roxa e molho especial.</p>
-                    </div>
-                </a>
+            <div class="card" id="cardLanTrads">
                 
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Big Cheddar</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$26,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão brioche, burger 160g, queijo cheddar e molho especial.</p>
-                    </div>
-                </a>
+                <div class="txtCardapio">
+            
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">X Burguer</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$10,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, queijo cheddar e maionese.</p>
+                        </div>
+                    </a>
 
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Bacon Cheddar</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$31,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão brioche, burger 160g, queijo cheddar, tiras de bacon e molho especial.</p>
-                    </div>
-                </a>
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">X Completo</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$18,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, alface, tomate, milho, ervilha, batata palha e maionese.</p>
+                        </div>
+                    </a>
+        
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">X Frango</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$23,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão tradicional aro 12 com gergelim, queijo, frango, alface, tomate, milho, ervilha, batata palha e maionese.</p>
+                        </div>
+                    </a>
 
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Big Triple Smash</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$35,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão brioche, 3 smash burgers 80g (240g), tiras de bacon, queijo cheddar e molho especial.</p>
-                    </div>
-                </a>
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">X Bacon</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$23,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, bacon, alface, tomate, milho, ervilha, batata palha e maionese.</p>
+                        </div>
+                    </a>
 
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Double Smash Bacon</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$31,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão brioche, burger 160g, queijo cheddar, tiras de bacon e molho especial.</p>
-                    </div>
-                </a>
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">X Simples</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$10,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, alface, tomate e maionese.</p>
+                        </div>
+                    </a>
 
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">BigHead</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$32,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão brioche, burger de 160g, queijo cheddar, tiras de bacon, cebola caramelizada , alface americana, tomate e molho especial.</p>
-                    </div>
-                </a>
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">X Egg</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$20,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, ovo, alface, tomate, milho, ervilha, batata palha e maionese.</p>
+                        </div>
+                    </a>
 
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Double Bacon Cheddar</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$37,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão brioche, 2 burger 160g, tiras de bacon, queijo cheddar e molho especial.</p>
-                    </div>
-                </a>
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">X Calabresa</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$23,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, calabresa, alface, tomate, milho, ervilha, batata palha e maionese.</p>
+                        </div>
+                    </a>
 
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Big Bacon Melt</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$32,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão brioche, burger 160g, queijo cheddar, cebola caramelizada, tiras de bacon e molho especial.</p>
-                    </div>
-                </a>
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">X Coração</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$23,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, coração, alface, tomate, milho, ervilha, batata palha e maionese.</p>
+                        </div>
+                    </a>
 
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Double BigHead</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$41,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão brioche, 2 Burgers 160g, queijo cheddar, tiras de bacon, cebola caramelizada, alface americana, tomate e molho especial.</p>
-                    </div>
-                </a>
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Dog Tradicional</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$18,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão 15cm, salsicha, milho, ervilha, batata palha, farofa, molho barbecue e maionese.</p>
+                        </div>
+                    </a>
 
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Super Big American</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$41,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão brioche, burger 200g recheado com mussarela, coberto com american cheese, tiras de bacon crocante e molho especial.</p>
-                    </div>
-                </a>
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Dog Frango</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$23,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão 15cm, salsicha, frango, milho, ervilha, batata palha, farofa, molho barbecue e maionese.</p>
+                        </div>
+                    </a>
 
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Super BigHead</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$41,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão brioche, burger 200g recheado com mussarela, coberto com cheddar fatiado, tiras de bacon e molho especial.</p>
-                    </div>
-                </a>
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Dog Bacon</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$23,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão 15cm, salsicha, bacon, milho, ervilha, batata palha, farofa, molho barbecue e maionese.</p>
+                        </div>
+                    </a>
 
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">SS Bacon Cheddar</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$24,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão cervejinha, burger 120g recheado com mussarela, coberto com cheddar fatiado, tiras de bacon e molho especial.</p>
-                    </div>
-                </a>
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Dog Pizza</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$20,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão 15cm, bastante queijo, orégano, tomate e molho especial.</p>
+                        </div>
+                    </a>
 
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Dog Calabresa</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$23,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão 15cm, salsicha, calabresa, milho, ervilha, batata palha, farofa, molho barbecue e maionese.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Dog Coração</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$23,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Pão 15cm, salsicha, coração, milho, ervilha, batata palha, farofa, molho barbecue e maionese.</p>
+                        </div>
+                    </a>
+
+                </div>
             </div>
 
-        </div>
-
-        <!-- CARDÁPIO DE COMBOS -->
-
-        <div class="card" id="cardCombos">
-            
-            <div class="txtCardapio">
-          
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Combo Big Date</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$39,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">2 Costela Bacon + 200g fritas artesanais + Coca-cola 350ml + maionese caseira. </p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Lil Salad Bacon + Refri</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$27,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Burger de 120g, tiras de bacon, queijo cheddar fatiado, alface americana, tomate e molho especial com pão cervejinha. Acompanha bebida 350ml.</p>
-                    </div>
-                </a>
-    
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Combo Big Family</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$64,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">5 Big Costela + Refrigerante 600ml. Burger de 80g queijo cheddar, bacon, alface americana, tomate e molho especial num pão cervejinha.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Big Cheese + Refri Promo</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$29,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Burger de 160g, queijo mussarela e molho especial, pão brioche artesanal de fermentação natural. Acompanha bebida 350ml.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Combo Big Friends</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$69,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">2 Double Smash Bacon + 200g de fritas fininha artesanal + Coca Cola 350ml + pote de maionese artesanal 100ml.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Big Costela Bacon em Dobro</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$29,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">2 Sanduíches: Burger 80g, queijo cheddar, bacon, alface americana, tomate e molho especial, pão cervejinha.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Combo Big Costela + Refri</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$17,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Burger 80g, queijo mussarela, alface americana, tomate e molho especial, pão cervejinha. Acompanha bebida lata 350ml.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Combo Big Love</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$69,90</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">2 Bacon Cheddar + 200g de fritas fininha artesanal + Coca Cola 350ml + pote de maionese artesanal 100ml.</p>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-
-        <div class="card" id="cardLanTrads">
-            
-            <div class="txtCardapio">
-          
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">X Burguer</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$10,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, queijo cheddar e maionese.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">X Completo</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$18,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, alface, tomate, milho, ervilha, batata palha e maionese.</p>
-                    </div>
-                </a>
-    
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">X Frango</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$23,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão tradicional aro 12 com gergelim, queijo, frango, alface, tomate, milho, ervilha, batata palha e maionese.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">X Bacon</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$23,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, bacon, alface, tomate, milho, ervilha, batata palha e maionese.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">X Simples</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$10,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, alface, tomate e maionese.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">X Egg</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$20,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, ovo, alface, tomate, milho, ervilha, batata palha e maionese.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">X Calabresa</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$23,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, calabresa, alface, tomate, milho, ervilha, batata palha e maionese.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">X Coração</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$23,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão tradicional aro 12 com gergelim, carne, queijo, coração, alface, tomate, milho, ervilha, batata palha e maionese.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Dog Tradicional</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$18,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão 15cm, salsicha, milho, ervilha, batata palha, farofa, molho barbecue e maionese.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Dog Frango</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$23,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão 15cm, salsicha, frango, milho, ervilha, batata palha, farofa, molho barbecue e maionese.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Dog Bacon</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$23,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão 15cm, salsicha, bacon, milho, ervilha, batata palha, farofa, molho barbecue e maionese.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Dog Pizza</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$20,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão 15cm, bastante queijo, orégano, tomate e molho especial.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Dog Calabresa</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$23,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão 15cm, salsicha, calabresa, milho, ervilha, batata palha, farofa, molho barbecue e maionese.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Dog Coração</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$23,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Pão 15cm, salsicha, coração, milho, ervilha, batata palha, farofa, molho barbecue e maionese.</p>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-
-        <div class="card" id="cardFritas">
-            
-            <div class="txtCardapio">
-          
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Fritas P</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$25,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Porção 300g de batata frita.</p>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-            
-        <div class="card" id="cardBebidas">
-            
-            <div class="txtCardapio">
-          
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Água Mineral sem Gás Sarandi</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$4,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Garrafa 500ml.</p>
-                    </div>
-                </a>
-    
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Água Mineral com Gás Sarandi</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$4,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Garrafa 500ml.</p>
-                    </div>
-                </a>
-    
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Coca-Cola Lata</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$7,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Lata 350ml.</p>
-                    </div>
-                </a>
-    
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Fanta Laranja Lata</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$7,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Lata 350ml.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Fanta Uva Lata</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$7,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Lata 350ml.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Sprite Original Lata</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$7,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Lata 350ml.</p>
-                    </div>
-                </a>
+            <div class="card" id="cardFritas">
                 
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Guaraná Antarctica Lata</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$7,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Lata 350ml.</p>
-                    </div>
-                </a>
+                <div class="txtCardapio">
+            
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Fritas P</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$25,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Porção 300g de batata frita.</p>
+                        </div>
+                    </a>
 
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Coca-cola zero Lata</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$7,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Lata 350ml.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Suco Del Valle Néctar Pêssego Lata</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$7,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Lata 290ml.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Suco Del Valle Néctar Uva Lata</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$7,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Lata 290ml.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Água Tônica Antarctica Lata</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$7,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Lata 290ml.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Coca-cola 600ml</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$9,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Garrafa 600ml.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Coca-cola 2L</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$15,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Garrafa 2L.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Guaraná Antarctica 2L</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$15,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Garrafa 2L.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Cerveja Corona Extra</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$12,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Garrafa 330ml. Produto para maiores de 18 anos.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Cerveja Long Neck Heineken</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$12,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Garrafa 330ml. Produto para maiores de 18 anos.</p>
-                    </div>
-                </a>
-
-                <a id="cardapioItm">
-                    <div id="cardItmLin1">
-                        <p id="nome">Cerveja Long Neck Budweiser</p>
-                        <p id="linha">___________________________________________________________________________________________________________________________________</p>
-                        <p id="preco">R$10,00</p>
-                    </div>
-                    <div id="cardItmLin2">
-                        <p id="descLanche">Garrafa 330ml. Produto para maiores de 18 anos.</p>
-                    </div>
-                </a>
-
+                </div>
             </div>
+                
+            <div class="card" id="cardBebidas">
+                
+                <div class="txtCardapio">
+            
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Água Mineral sem Gás Sarandi</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$4,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Garrafa 500ml.</p>
+                        </div>
+                    </a>
+        
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Água Mineral com Gás Sarandi</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$4,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Garrafa 500ml.</p>
+                        </div>
+                    </a>
+        
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Coca-Cola Lata</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$7,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Lata 350ml.</p>
+                        </div>
+                    </a>
+        
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Fanta Laranja Lata</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$7,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Lata 350ml.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Fanta Uva Lata</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$7,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Lata 350ml.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Sprite Original Lata</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$7,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Lata 350ml.</p>
+                        </div>
+                    </a>
+                    
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Guaraná Antarctica Lata</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$7,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Lata 350ml.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Coca-cola zero Lata</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$7,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Lata 350ml.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Suco Del Valle Néctar Pêssego Lata</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$7,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Lata 290ml.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Suco Del Valle Néctar Uva Lata</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$7,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Lata 290ml.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Água Tônica Antarctica Lata</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$7,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Lata 290ml.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Coca-cola 600ml</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$9,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Garrafa 600ml.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Coca-cola 2L</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$15,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Garrafa 2L.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Guaraná Antarctica 2L</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$15,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Garrafa 2L.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Cerveja Corona Extra</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$12,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Garrafa 330ml. Produto para maiores de 18 anos.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Cerveja Long Neck Heineken</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$12,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Garrafa 330ml. Produto para maiores de 18 anos.</p>
+                        </div>
+                    </a>
+
+                    <a id="cardapioItm">
+                        <div id="cardItmLin1">
+                            <p id="nome">Cerveja Long Neck Budweiser</p>
+                            <p id="linha">___________________________________________________________________________________________________________________________________</p>
+                            <p id="preco">R$10,00</p>
+                        </div>
+                        <div id="cardItmLin2">
+                            <p id="descLanche">Garrafa 330ml. Produto para maiores de 18 anos.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+
         </div>
 
+        <div class="contatos">
 
-    </div>
+            <div id="siganosDiv">
+                <h1 id="siganos">Siga-nos!</h1>
+            </div>
 
-    <div class="contatos">
+            <div class="redesSociais">
+                <img src="imgs/wpp.png" id="redesIcon">
+                <img src="imgs/fb.png" id="redesIcon">
+                <img src="imgs/ig.png" id="redesIcon">
+                <img src="imgs/ifood.png" id="redesIcon">
+            </div>
 
-        <div id="siganosDiv">
-            <h1 id="siganos">Siga-nos!</h1>
         </div>
 
-        <div class="redesSociais">
-            <img src="imgs/wpp.png" id="redesIcon">
-            <img src="imgs/fb.png" id="redesIcon">
-            <img src="imgs/ig.png" id="redesIcon">
-            <img src="imgs/ifood.png" id="redesIcon">
-        </div>
-
-    </div>
+    </main>
 
     <footer class="footer">
         <div class="footerIcons">
             <img src="imgs/wppIcon.png" class="footerIcon">
             <img src="imgs/ifoodIcon.png" class="footerIcon" id="ifoodIcon">
-            <img src="imgs/igIcon.png" class="footerIcon">
-            <img src="imgs/fbIcon.png" class="footerIcon">
+            <img src="imgs/igIcon.png" class="footerIcon" id="igFbIcon">
+            <img src="imgs/fbIcon.png" class="footerIcon" id="igFbIcon">
         </div>
     </footer>
 

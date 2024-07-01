@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+
+html, body {
+    font-family: "Khand", sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+a:any-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* ============================================================================================== */
+/* NAVBAR */
+
+.mobileTop {
+    display: none;
+}
+
+.desktopNavbar {
+    display: flex;
+    width: 85%;
+    font-size: 20px;
+    /* TOPO DIREITA BAIXO ESQUERDA */
+    padding: 2% 7.5% 0 7.5%;
+    justify-content: space-evenly;
+}
+
+.retNavbar {
+    background-color: #AC5D00;
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    padding: 0.2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#retNavbarEsq {
+    border-radius: 10px 0 0 10px;
+}
+
+#retNavbarDir {
+    border-radius: 0 10px 10px 0;
+}
+
+#logo {
+    width: 7%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================================================================================== */
+/* CARRINHO */
+
+main {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carrinho {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 7.5% 0 7.5%;
+    padding-bottom: 4.5%;
+ }
+
+/* PRODUTOS */
+.containerProdutos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+/* IMAGENS DOS PRODUTOS */
+#imgProd {
+   width: 20%;
+   height: 100%;
+   margin-right: 10%;
+}
+
+.prodInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* NOME DO PRODUTO */
+#produtoTit {
+    font-weight: 500;
+}
+
+.valor {
+    width: 100%;
+    display: flex;
+    align-items: left;
+}
+
+#preco {
+    display: flex;
+    font-weight: 400;
+}
+
+.quantidade {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+}
+
+#qtd {
+    display: flex;
+    align-items: center; 
+    margin: 0 2.5% 0 2.5%;
+    font-weight: 400;
+}
+
+.quantidade img {
+    width: 100%;
+    height: 100%;
+}
+
+.quantidade button {
+    display: flex;
+    background-color: #000;
+    border: none;
+    margin: 0 1%;
+    cursor: pointer;
+}
+
+/* ============================================================================================== */
+/* RESUMO DO PEDIDO */
+
+.resumoPedido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #AC5D00;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Khand', sans-serif;
+    margin-right: 100px;
+    padding: 2.5%;
+}
+
+.resumoPedido h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 2px solid #AC5D00;
+    padding-bottom: 10px;
+}
+
+.pedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.quantidadeItem {
+    font-size: 14px;
+    margin-left: 25px;
+    align-items: center;
+    color: #ccc;
+}
+
+.pedidoValor {
+    margin-left: auto;
+    padding-left: 20px;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    border-top: 2px solid #AC5D00;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalValor {
+    font-weight: 500;
+}
+
+.finalizarCompra {
+    display: flex;
+    justify-content: center;
+}
+
+.finalizarCompra button {
+    width: 100%;
+    height: 150%;
+    background-color: #AC5D00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 750;
+    font-family: 'Khand', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+/* ============================================================================================== */
+/* FOOTER */
+
+.footer {
+    background-color: #AC5D00;
+    position:fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: right;    
+    width: 100%;
+    padding: 0.5% 0 0;
+    margin-top: auto;
+}
+
+.footerIcons {
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+}
+
+.footerIcon {
+    width: 7%;
+    height: 100%;
+    margin: 0 5% 0 5%;
+}
+
+#ifoodIcon {
+    width: 9%;
+    height: 100%;
+    margin: 0 5% 0.7% 5%;
+}
+
+#igFbIcon {
+    width: 8%;
+    height: 100%;
+}

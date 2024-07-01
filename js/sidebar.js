@@ -11,7 +11,7 @@ document.querySelector('#menu').addEventListener('click', () => {
 })
 
 function openNav() {
-    document.querySelector(".mobileSidebar").style.width = "25%";
+    document.querySelector(".mobileSidebar").style.width = "35%";
     document.querySelector(".colLinks").style.display = "flex";
     document.querySelector(".mobileSidebar").style.height = "25%";
     aberto = !aberto;

@@ -4,110 +4,141 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (min-width: 600px)" href="style/indexDesktop.css">
-    <link rel="stylesheet" href="carrinho.css">
-    <title>Página Inicial</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
+    <link rel="icon" type="image/x-icon" href="imgs/logo.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="style/carrinhoDesktop.css">
+    <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 600px)" href="style/carrinhoMobile.css">
+    <title>Carrinho</title>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR DESKTOP -->
 
-    <nav>
+    <nav class="desktopNavbar">
 
-        <div class="retNavbar">
-            <a>MENU</a>
-            <a>CARDÁPIO</a>
+        <div class="retNavbar" id="retNavbarEsq">
+            <a href="index.html">MENU</a>
+            <a href="index.html#cardTit">CARDÁPIO</a>
         </div>
 
         <img id="logo" src="imgs/logo.jpg">
-
-        <div class="retNavbar">
-            <a>CARRINHO</a>
-            <a>CONTATO</a>
-        </div>
+        
+        <div class="retNavbar" id="retNavbarDir">
+            <a href="carrinho.html">CARRINHO</a>
+            <a href="index.html#siganos">CONTATO</a>
+        </div>  
 
     </nav>
 
-    <!-- CARRINHO -->
-    <div class="carrinho">
+    <!-- SIDEBAR MOBILE -->
 
-        <!-- PRODUTOS -->
-        <div class="container-produtos">
+    <div class="mobileTop">
 
-                        <!-- PRODUTO 1 -->
-            <div class="produto">
-                <img src="imgs/lilSaladBacon.png" id="imgProd" alt="Lil Salad Bacon">
-                <div class="prodInfo">
-                    <h1 id="produtoTit">Lil Salad Bacon</h1>
-                    <div class="valor">
-                        <h2 id="preco"> R$24,90</h2>
-                        <div class="quantidade">
-                            <button class="botaoAdd"><img src="imgs/add.png"></button>
-                            <h2 id="qtd">1x</h2>
-                            <button class="botaoRemove"><img src="imgs/remover.png"></button>
+        <img id="logo" src="imgs/logo.jpg">
+
+        <nav class="mobileSidebar">
+            <div class="colMenu">
+                <button class="openSidebarBtn" id="menu">
+                    <i class="material-icons" id="menuIcon">menu</i>
+                </button>
+            </div>
+            <div class="colLinks">
+                <a href="index.html">MENU</a>
+                <a href="index.html#cardTit">CARDÁPIO</a>
+                <a href="carrinho.html">CARRINHO</a>
+                <a href="index.html#siganos">CONTATO</a>
+            </div>
+        </nav>
+    </div> 
+
+    <main>
+        <!-- CARRINHO -->
+        <div class="carrinho">
+
+            <!-- PRODUTOS -->
+            <div class="containerProdutos">
+
+                <!-- PRODUTO 1 -->
+                <div class="produto">
+                    <img src="imgs/lilSaladBacon.png" id="imgProd" alt="Lil Salad Bacon">
+                    <div class="prodInfo">
+                        <h1 id="produtoTit">Lil Salad Bacon</h1>
+                        <div class="valor">
+                            <h2 id="preco"> R$24,90</h2>
+                            <div class="quantidade">
+                                <button class="botaoAdd"><img src="imgs/add.png"></button>
+                                <h2 id="qtd">1x</h2>
+                                <button class="botaoRemove"><img src="imgs/remover.png"></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- PRODUTO 2 -->
-            <div class="produto">
-                <img src="imgs/CocaCola.png" id="imgProd" alt="Coca-Cola 600ml">
-                <div class="prodInfo">
-                    <h1 id="produtoTit">Coca-Cola 600ml</h1>
-                    <div class="valor">
-                        <h2 id="preco"> R$9,99</h2>
-                        <div class="quantidade">
-                            <button class="botaoAdd"><img src="imgs/add.png"></button>
-                            <h2 id="qtd">1x</h2>
-                            <button class="botaoRemove"><img src="imgs/remover.png"></button>
+                <!-- PRODUTO 2 -->
+                <div class="produto">
+                    <img src="imgs/CocaCola.png" id="imgProd" alt="Coca-Cola 600ml">
+                    <div class="prodInfo">
+                        <h1 id="produtoTit">Coca-Cola 600ml</h1>
+                        <div class="valor">
+                            <h2 id="preco"> R$9,99</h2>
+                            <div class="quantidade">
+                                <button class="botaoAdd"><img src="imgs/add.png"></button>
+                                <h2 id="qtd">1x</h2>
+                                <button class="botaoRemove"><img src="imgs/remover.png"></button>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+
+    <!-- RESUMO DO PEDIDO -->
+            <div class="resumoPedido">
+                <h2>Resumo do Pedido</h2>
+                <div class="pedido">
+                    <span class="pedidoNome">Lil Salad Bacon</span> 
+                    <span class="quantidadeItem">1x</span>
+                    <span class="pedidoValor">R$24,90</span>
+                </div>
+                <div class="pedido">
+                    <span class="pedidoNome">Coca-cola 600ml</span> 
+                    <span class="quantidadeItem">1x</span>
+                    <span class="pedidoValor">R$9,99</span>
+                </div>
+                <h3 class="total">
+                    <span>TOTAL:</span>
+                    <span class="totalValor">R$34,89</span>
+                </h3>
+                <div class="finalizarCompra">
+                    <button id="finalizarCompra">Finalizar compra</button> 
+                </div>
+            </div>
+            
         </div>
-
- <!-- RESUMO DO PEDIDO -->
- <div class="resumo-pedido">
-    <h2>Resumo do Pedido</h2>
-    <div class="pedido">
-        <span class="pedido-nome">Lil Salad Bacon</span> 
-        <span class="quantidade-item">1x</span>
-        <span class="pedido-valor">R$24,90</span>
-    </div>
-    <div class="pedido">
-        <span class="pedido-nome">Coca-cola 600ml</span> 
-        <span class="quantidade-item">1x</span>
-        <span class="pedido-valor">R$9,99</span>
-    </div>
-    <h3 class="total">
-        <span>TOTAL:</span>
-        <span class="total-valor">R$34,89</span>
-    </h3>
-    <div class="finalizar-compra">
-        <button>Finalizar compra</button> 
-    </div>
-</div>
-    
-</div>
+    </main> 
 
 
 <!-- FOOTER -->
-<footer class="footer">
-    <div class="footerIcons">
-        <img src="imgs/wppIcon.png" class="footerIcon">
-        <img src="imgs/ifoodIcon.png" class="footerIcon" id="ifoodIcon">
-        <img src="imgs/igIcon.png" class="footerIcon">
-        <img src="imgs/fbIcon.png" class="footerIcon">
-    </div>
-</footer>
-
-
-
-
+    <footer class="footer">
+        <div class="footerIcons">
+            <img src="imgs/wppIcon.png" class="footerIcon">
+            <img src="imgs/ifoodIcon.png" class="footerIcon" id="ifoodIcon">
+            <img src="imgs/igIcon.png" class="footerIcon" id="igFbIcon">
+            <img src="imgs/fbIcon.png" class="footerIcon" id="igFbIcon">
+        </div>
+    </footer>
 
 </body>
+
+<script src="js/sidebar.js"></script>
+<script>
+
+    document.querySelector('#finalizarCompra').addEventListener('click', () => {
+        window.location.href = "pagamento.html";
+    })
+
+</script>
 
 </html>

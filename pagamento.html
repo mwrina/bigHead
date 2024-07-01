@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style/pagamento.css">
+    <link rel="icon" type="image/x-icon" href="imgs/logo.jpg">
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="desktopNavbar">
+
+        <div class="retNavbar" id="retNavbarEsq">
+            <a href="index.html">MENU</a>
+            <a href="index.html#cardTit">CARDÁPIO</a>
+        </div>
+
+        <img id="logo" src="imgs/logo.jpg">
+        
+        <div class="retNavbar" id="retNavbarDir">
+            <a href="carrinho.html">CARRINHO</a>
+            <a href="index.html#siganos">CONTATO</a>
+        </div>  
+
+    </nav>
+
+    <div class="mobileTop">
+
+        <img id="logo" src="imgs/logo.jpg">
+
+        <nav class="mobileSidebar">
+            <div class="colMenu">
+                <button class="openSidebarBtn" id="menu">
+                    <i class="material-icons" id="menuIcon">menu</i>
+                </button>
+            </div>
+            <div class="colLinks">
+                <a href="index.html">MENU</a>
+                <a href="index.html#cardTit">CARDÁPIO</a>
+                <a href="carrinho.html">CARRINHO</a>
+                <a href="index.html#siganos">CONTATO</a>
+            </div>
+        </nav>
+    </div> 
+
+    <main>
+        
+
+            <form class = "form">
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" class="input" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" class="input" required>
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" class="input">
+
+                <label for="pagamento">Forma de pagamento:</label>
+                <select id="pagamento" class="input" required>
+                    <option value="cartao">Cartão (crédito ou débito)</option>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="pix">PIX</option>
+                </select>
+
+                <div class="btnContainer">
+                    <button id="finalizarCompra">Finalizar compra</button>
+                </div>
+            </form>
+
+    </main>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footerIcons">
+            <img src="imgs/wppIcon.png" class="footerIcon">
+            <img src="imgs/ifoodIcon.png" class="footerIcon" id="ifoodIcon">
+            <img src="imgs/igIcon.png" class="footerIcon" id="igFbIcon">
+            <img src="imgs/fbIcon.png" class="footerIcon" id="igFbIcon">
+        </div>
+    </footer>
+</body>
+<script src="js/sidebar.js"></script>
+</html>
