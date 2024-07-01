@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style/produto.css">
     <link rel="icon" type="image/x-icon" href="imgs/logo.jpg">
     <title>Produto</title>
 </head>
 <body>
-    <!-- NAVBAR -->
 
+    <!-- NAVBAR -->
     <nav class="desktopNavbar">
 
         <div class="retNavbar" id="retNavbarEsq">
@@ -29,7 +30,6 @@
     </nav>
 
     <!-- SIDEBAR MOBILE -->
-
     <div class="mobileTop">
 
         <img id="logo" src="imgs/logo.jpg">
@@ -55,17 +55,22 @@
             <div class="col-md-6 menuEsq position-relative">
                 <img id="imgBackground" class="img-fluid" src="imgs/background_Produto.png" alt="Background">
                 <img id="imgBurger" class="img-fluid burger" src="imgs/img_Produto.png" alt="Burger">
-                <!-- <img id="imgDetalhe" class="img-fluid detalhe" src="imgs/detalhe.png" alt="Detalhe"> -->
             </div>
             <div class="col-md-6 infosDrt d-flex flex-column align-items-center justify-content-center">
+
                 <div id="infoProduto">
                     <div id="info">
                         <h1 id="nomeProduto" class="text-center">Lil Cheddar</h1>
                         <h2 id="precoProduto" class="text-center">R$15,90</h2>
                         <p id="descProduto" class="text-center">Pão cervejinha, burger 120g, cheddar fatiado e molho especial</p>
-                        <button class="btn btnAddCarrinho d-flex align-items-center">
-                            Adicionar ao carrinho <img src="imgs/carrinho.png" class="ml-2" alt="Carrinho">
-                        </button>
+                    
+                        <a href="carrinho.html">
+                            <button class="btn btnAddCarrinho d-flex align-items-center">
+                                Adicionar ao carrinho <img src="imgs/carrinho.png" class="ml-2" alt="Carrinho"> 
+                            </button>
+                        </a>
+                        
+
                     </div>
                 </div>
             </div>
@@ -89,4 +94,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
+
+<script src="js/sidebar.js"></script>
+
 </html>
