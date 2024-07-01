@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="index.css"> -->
-    <link rel="stylesheet" href="produto.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/produto.css">
     <link rel="shortcut icon" href="imgs/locIcon.png" type="image/x-icon">
     <title>Produto</title>
 </head>
 <body>
-
     <!-- NAVBAR -->
 
-    <nav>
+    <nav class="desktopNavbar">
 
-        <div class="retNavbar">
+        <div class="retNavbar" id="retNavbarEsq">
             <a>MENU</a>
             <a>CARDÁPIO</a>
         </div>
 
         <img id="logo" src="imgs/logo.jpg">
         
-        <div class="retNavbar">
+        <div class="retNavbar" id="retNavbarDir">
             <a>CARRINHO</a>
             <a>CONTATO</a>
         </div>  
@@ -30,49 +29,43 @@
     </nav>
 
     <!-- MENU -->
-
-    <div class="menu">
-
-        <div class="menuEsq">
-            <img id="imgBackground" src="imgs/background_Produto.png">
-            <img id="imgBurger" src="imgs/img_Produto.png">
-            <img id="imgDetalhe" src="imgs/detalhe.png">
-        </div>
-
-
-        <div class="infosDrt">
-
-            <div class="infoProduto">
-                
-                <div id="info">
-
-                    <h1 id="nomeProduto">Lil Cheddar </h1>  
-
-                    <h2 id="precoProduto"> R$15,90 </h2>   
-
-                    <p id="descProduto"> Pão cervejinha, burger 120g, cheddar fatiado e molho especial </p>     
-
-                    <button class="btnAddCarrinho">Adicionar ao carrinho <img src="imgs/carrinho.png"></button>   
-
-                </div>
-
-
+    <div class="container menu mt-5">
+        <div class="row">
+            <div class="col-md-6 menuEsq position-relative">
+                <img id="imgBackground" class="img-fluid" src="imgs/background_Produto.png" alt="Background">
+                <img id="imgBurger" class="img-fluid burger" src="imgs/img_Produto.png" alt="Burger">
+                <!-- <img id="imgDetalhe" class="img-fluid detalhe" src="imgs/detalhe.png" alt="Detalhe"> -->
             </div>
-        
+            <div class="col-md-6 infosDrt d-flex flex-column align-items-center justify-content-center">
+                <div id="infoProduto">
+                    <div id="info">
+                        <h1 id="nomeProduto" class="text-center">Lil Cheddar</h1>
+                        <h2 id="precoProduto" class="text-center">R$15,90</h2>
+                        <p id="descProduto" class="text-center">Pão cervejinha, burger 120g, cheddar fatiado e molho especial</p>
+                        <button class="btn btnAddCarrinho d-flex align-items-center">
+                            Adicionar ao carrinho <img src="imgs/carrinho.png" class="ml-2" alt="Carrinho">
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
     </div>
 
-    <br>
-    <br>
-    <br>
+    <br><br>
 
-    <footer>
-        <img src="imgs/ifoodIcon.png" id="footerIcons">
-        <img src="imgs/igIcon.png" id="footerIcons">
-        <img src="imgs/fbIcon.png" id="footerIcons">
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footerIcons">
+            <img src="imgs/wppIcon.png" class="footerIcon">
+            <img src="imgs/ifoodIcon.png" class="footerIcon" id="ifoodIcon">
+            <img src="imgs/igIcon.png" class="footerIcon">
+            <img src="imgs/fbIcon.png" class="footerIcon">
+        </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
